@@ -8,10 +8,10 @@ namespace LoggingKata.Test
         [Theory]
         [InlineData("0, 0, Taco Bell Warrior", 0, 0, "Taco Bell Warrior")]
         [InlineData("-90, 180, Taco Bell North Ridge", 90, 180, "Taco Bell North Ridge")]
-        [InlineData("90, -180, Taco Bell Smithers", 67.723, 85.976, "Taco Bell Smithers")]
+        [InlineData("90, -180, Taco Bell Smithers", 67, 85, "Taco Bell Smithers")]
         public void ShouldParse(string str, double expectedLat, double expectedLon, string expectedName)
         {
-            // TODO: Complete Should Parse
+            //TODO: Complete Should Parse
             TacoParser parsed = new TacoParser();
 
             ITrackable actual = parsed.Parse(str);
