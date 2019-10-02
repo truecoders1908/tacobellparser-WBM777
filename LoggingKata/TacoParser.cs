@@ -47,10 +47,11 @@
             Point point = new Point(latitude, longitude);
 
             //Set Name and Location
+            tacobell.Name = locationName;
+            tacobell.Location = point;
 
 
-            // Do not fail if one record parsing fails, return null
-            return null; // TODO Implement
+            return tacobell;
         }
             
     }
